@@ -1,0 +1,19 @@
+{
+  "name": "laying-the-foundation",
+  "version": "1.0.0",
+  "description": "Chapter-3 Laying the foundation",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "author": "Rohit kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
