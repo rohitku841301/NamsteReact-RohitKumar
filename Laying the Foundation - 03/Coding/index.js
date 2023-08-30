@@ -51,5 +51,15 @@ const Title = () => {
   );
 };
 
+
+// ---- for testing purpose -----
+const Test = ()=>{
+  return(
+    <>
+      { React.createElement("h1", {}, "Heading")}
+    </>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(nested2());
+root.render(<Test />);
