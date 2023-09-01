@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 // React.createElement => ReactElement(Js Object) => HTMLElement(render)
 const heading = React.createElement("h1", {}, "Heading");
@@ -53,13 +53,26 @@ const Title = () => {
 
 
 // ---- for testing purpose -----
-const Test = ()=>{
+
+const B = ()=>{
   return(
     <>
-      { React.createElement("h1", {}, "Heading")}
+    
+      <p>i m good</p>
     </>
+    
   )
 }
 
+const A = React.createElement('h1',{},<B />);
+
+const C = (
+  <>
+  {B}
+  <h1>I mmmm</h1>
+  </>
+)
+// ---------------
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Test />);
+root.render(C);
