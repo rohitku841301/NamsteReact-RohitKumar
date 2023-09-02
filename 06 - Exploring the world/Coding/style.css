@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerContainer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuItem{
+    display: flex;
+    width: 70%;
+    justify-content: end;
+    align-items: center;  
+    list-style: none;
+}
+
+.menuItem a{
+    text-decoration: none;
+}
+
+.menuItem li{  
+    color: black;
+    margin: 0px 10px;
+}
+
+.menuItem button{
+    margin: 0 10px;
+    padding: 6px 8px;
+    border-radius: 5px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: auto; */
+}
+
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 250px;
+    margin: 10px;
+    background-color: #f0f0f0;
+
+}
+
+.card img{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.cardData{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.cardDataShimmer{
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+
+.thinBlack{
+    background: 
+    linear-gradient(to bottom, transparent, black) 
+      no-repeat bottom;
+	background-size: 100% 70%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 10px;
+    height: 16em;
+    width: 100%;
+    
+}
+
+.cardTitle{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardCuisines{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+
+.starCuisin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topRated{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.distanceLocality{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topRatedRestau{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.searchField{
+    display: flex;
+    /* background-color: red; */
+    width: 65%;
+}
+.searchField input,button{
+    padding: 10px;
+}
+
+.searchField input{
+    width: 300px;
+}
+
+
+/* onClick={()=>{
+    let filterRestro = resList.filter((restro)=>{res})
+  }} */

@@ -1,9 +1,9 @@
 import FoodCard from "./FoodCard";
-import { restroDataList } from "../utils/restroDataList";
+import * as myModule from "../utils/restroDataList";
 import { useState } from "react";
 
 const Body = () => {
-  let [resList, setResList] = useState(restroDataList);
+  let [resList, setResList] = useState(myModule.restroDataList);
   
   return (
     <>
