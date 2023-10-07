@@ -19,9 +19,13 @@ const Body = () => {
   }, []);
 
   const fetchRestro = async () => {
+    // const data = await fetch(
+    //   "https://www.swiggy.com/mapi/homepage/getCards?lat=28.4736843&lng=77.1068059&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    // )
     const data = await fetch(
-      "https://www.swiggy.com/mapi/homepage/getCards?lat=28.4736843&lng=77.1068059&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://corsproxy.io/?https://www.swiggy.com/mapi/homepage/getCards?lat=28.4736843&lng=77.1068059&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     )
+   
     const json = await data.json();
     console.log(json);
     setFilterRestaurent(

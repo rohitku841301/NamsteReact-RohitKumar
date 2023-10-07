@@ -1,5 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+// import ipInfo from "ip-info-finder";
+
+
+ 
+// ipInfo.getIPInfo('192.0.2.1').then(data => {
+//     console.log(data);
+// })
+// .catch(err => console.log(err));
 
 // React.createElement => ReactElement(Js Object) => HTMLElement(render)
 const heading = React.createElement("h1", {}, "Heading");

@@ -6,6 +6,10 @@ const useRestaurentMenu = (resId) => {
   let [resMenuInfo, setResMenuInfo] = useState(null);
   let [resMenuInfoCopy, setResMenuInfoCopy] = useState(null);
 
+  const all = ()=>{
+    setResMenuInfo(resMenuInfoCopy);
+  }
+
   useEffect(() => {
     fetchMenu();
   }, []);
@@ -16,7 +20,7 @@ const useRestaurentMenu = (resId) => {
     // console.log(json);
     setResInfo(json);
   };
-  return resInfo;
+  return [resInfo, all];
 };
 
 export default useRestaurentMenu;

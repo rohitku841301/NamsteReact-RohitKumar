@@ -10,7 +10,7 @@ import { ITEM_URL } from "../utils/constant";
 const RestroMenu = () => {
   const { resId } = useParams();
 
-  const resInfo = useRestaurentMenu(resId);
+  const [resInfo, all] = useRestaurentMenu(resId);
 
   let [resMenuInfo, setResMenuInfo] = useState(null);
   let [resMenuInfoCopy, setResMenuInfoCopy] = useState(null);
